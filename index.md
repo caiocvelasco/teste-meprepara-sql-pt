@@ -2,8 +2,6 @@
 title: "Curso de SQL - Configuração do Ambiente"
 ---
 
-# Configuração do Ambiente do Aluno
-
 Este guia mostra o passo a passo para preparar o ambiente básico necessário para testar o curso de SQL.
 
 Neste momento, vamos configurar apenas:
@@ -17,8 +15,6 @@ Neste momento, vamos configurar apenas:
 
 A parte de ambiente virtual, instalação de pacotes Python e configurações mais avançadas será feita depois.
 
----
-
 ## 1. Criar uma conta no GitHub
 
 O GitHub será usado para acessar o repositório do curso. Se você já tiver conta no GitHub, pule essa etapa.
@@ -31,13 +27,11 @@ O GitHub será usado para acessar o repositório do curso. Se você já tiver co
 
 3. Crie uma conta usando seu e-mail.
 
-- Escolha um nome razoavelmente **profissional** (por exemplo, primeiro nome e sobrenome: caiocvelasco), pois você pode precisar usar no seu trabalho futuro.
+   Escolha um nome razoavelmente **profissional** (por exemplo, primeiro nome e sobrenome: caiocvelasco), pois você pode precisar usar no seu trabalho futuro.
 
 4. Confirme o e-mail, caso o GitHub solicite.
 
 5. Depois de criar a conta, faça login.
-
----
 
 ## 2. Instalar o Git
 
@@ -77,17 +71,9 @@ No **macOS**, você pode abrir o terminal assim:
 
 No **Linux**, você pode abrir o terminal pesquisando por `Terminal` no menu de aplicativos.
 
-6. Teste se o Git foi instalado corretamente usando o comando abaixo no terminal:
+6. Teste se o Git foi instalado corretamente usando o comando abaixo no terminal: `git --version`
 
-`git --version`
-
-Se aparecer algo parecido com:
-
-`git version 2.xx.x`
-
-significa que a instalação funcionou.
-
----
+   Se aparecer algo parecido com: `git version 2.xx.x` significa que a instalação funcionou.
 
 ## 3. Instalar o Visual Studio Code
 
@@ -105,8 +91,6 @@ O Visual Studio Code será o editor usado para abrir a pasta do curso e editar o
 
 5. Abra o Visual Studio Code.
 
----
-
 ## 4. Instalar as extensões recomendadas no VS Code
 
 As extensões ajudam o VS Code a trabalhar melhor com Git, notebooks e arquivos Python.
@@ -123,39 +107,25 @@ As extensões ajudam o VS Code a trabalhar melhor com Git, notebooks e arquivos 
 
 4. Clique em **Install**.
 
----
-
 ### 4.1 Instalar GitLens
 
-Pesquise por:
+Pesquise por: `GitLens`
 
-`GitLens`
-
-Instale a extensão:
-
-`GitLens — Git supercharged`
+Instale a extensão: `GitLens — Git supercharged`
 
 Essa extensão ajuda a visualizar informações de Git dentro do VS Code, como alterações nos arquivos e histórico do repositório.
 
----
-
 ### 4.2 Instalar Jupyter
 
-Pesquise por:
-
-`Jupyter`
+Pesquise por: `Jupyter`
 
 Instale a extensão oficial da Microsoft.
 
 Essa extensão permite abrir notebooks `.ipynb` no VS Code.
 
----
-
 ### 4.3 Instalar Python
 
-Pesquise por:
-
-`Python`
+Pesquise por: `Python`
 
 Instale a extensão oficial da Microsoft.
 
@@ -165,8 +135,6 @@ Instale a extensão oficial da Microsoft.
 - GitLens
 - Jupyter
 - Python
-
----
 
 ## 5. Instalar o DBeaver
 
@@ -188,8 +156,6 @@ O DBeaver será usado para escrever e executar consultas SQL em uma interface gr
 
 O DBeaver instalado e abrindo normalmente.
 
----
-
 ## 6. Clonar o repositório do curso
 
 Depois que Git, GitHub e VS Code estiverem prontos, o próximo passo é baixar o repositório do curso para o seu computador.
@@ -198,27 +164,17 @@ No GitHub, os arquivos do curso ficam em um **repositório**.
 
 Um repositório é uma pasta de projeto versionada. Ele pode conter arquivos, exercícios, scripts, dados, instruções e histórico de mudanças. Ao clonar um repositório, você está baixando uma cópia desse projeto para o seu computador.
 
----
-
 ### Antes de clonar: crie uma pasta para seus repositórios
 
 Como você provavelmente usará Git e GitHub em outros projetos no futuro, é uma boa prática criar uma pasta específica no seu computador para guardar seus repositórios.
 
-Você pode criar uma pasta chamada:
+Você pode criar uma pasta chamada: `repositorios`
 
-`repositorios`
+Por exemplo, no Windows, você pode criar a pasta dentro de **Documentos**: `Documentos/repositorios`
 
-Por exemplo, no Windows, você pode criar a pasta dentro de **Documentos**:
-
-`Documentos/repositorios`
-
-No macOS ou Linux, você pode criar a pasta dentro da sua pasta de usuário:
-
-`~/repositorios`
+No macOS ou Linux, você pode criar a pasta dentro da sua pasta de usuário: `~/repositorios`
 
 Essa pasta será o lugar onde você guardará projetos baixados do GitHub, incluindo o repositório deste curso.
-
----
 
 ### Passo a passo
 
@@ -228,9 +184,7 @@ Essa pasta será o lugar onde você guardará projetos baixados do GitHub, inclu
 
 3. Copie o link HTTPS do repositório.
 
-O link será parecido com:
-
-`https://github.com/usuario/nome-do-repositorio.git`
+   O link será parecido com: `https://github.com/usuario/nome-do-repositorio.git`
 
 4. No seu computador, crie uma pasta chamada `repositorios`.
 
@@ -241,35 +195,17 @@ Sugestões:
 
 5. Abra o VS Code.
 
-6. Na tela inicial do VS Code, clique em:
-
-`Clone Git Repository`
-
-ou, em português:
-
-`Clonar Repositório Git`
+6. Na tela inicial do VS Code, clique em: `Clone Git Repository` ou, em português: `Clonar Repositório Git`
 
 7. Cole o link HTTPS do repositório do curso.
-
-O link será parecido com:
-
-`https://github.com/usuario/nome-do-repositorio.git`
 
 8. Escolha a pasta `repositorios` como o local onde o projeto será salvo.
 
 9. Confirme a clonagem.
 
-O VS Code irá baixar o repositório do curso para dentro da pasta `repositorios`.
+   O VS Code irá baixar o repositório do curso para dentro da pasta `repositorios`.
 
-10. Quando o VS Code perguntar se você deseja abrir o repositório clonado, clique em:
-
-`Open`
-
-ou, em português:
-
-`Abrir`
-
----
+10. Quando o VS Code perguntar se você deseja abrir o repositório clonado, clique em: `Open`
 
 ### Ao final desta etapa, você deve ter:
 
