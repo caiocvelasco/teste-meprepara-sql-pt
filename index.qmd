@@ -15,6 +15,10 @@ A parte de ambiente virtual, instalação de pacotes Python e configurações ma
 
 O GitHub será usado para acessar o repositório do curso. Se você já tiver conta no GitHub, pule essa etapa.
 
+O que é o GitHub? Veja o vídeo abaixo apenas para se familiarizar!
+
+<https://youtu.be/hQIrO4dlSho?si=bOrfg-YLvHO9WVL1>
+
 ### Passo a passo
 
 1. Acesse: <https://github.com/>
