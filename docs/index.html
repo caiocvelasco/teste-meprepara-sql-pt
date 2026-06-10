@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Curso de SQL - Configuração do Ambiente – Configuração do Ambiente</title>
+<title>Curso de SQL - Configuração Geral – Configuração do Ambiente</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +19,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -119,6 +154,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#instalar-o-visual-studio-code" id="toc-instalar-o-visual-studio-code" class="nav-link" data-scroll-target="#instalar-o-visual-studio-code">3. Instalar o Visual Studio Code</a>
   <ul class="collapse">
   <li><a href="#passo-a-passo-2" id="toc-passo-a-passo-2" class="nav-link" data-scroll-target="#passo-a-passo-2">Passo a passo</a></li>
+  <li><a href="#usar-o-git-bash-no-terminal-integrado-do-vs-code" id="toc-usar-o-git-bash-no-terminal-integrado-do-vs-code" class="nav-link" data-scroll-target="#usar-o-git-bash-no-terminal-integrado-do-vs-code">3.1 Usar o Git Bash no terminal integrado do VS Code</a></li>
   </ul></li>
   <li><a href="#instalar-as-extensões-recomendadas-no-vs-code" id="toc-instalar-as-extensões-recomendadas-no-vs-code" class="nav-link" data-scroll-target="#instalar-as-extensões-recomendadas-no-vs-code">4. Instalar as extensões recomendadas no VS Code</a>
   <ul class="collapse">
@@ -147,7 +183,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Curso de SQL - Configuração do Ambiente</h1>
+<h1 class="title">Curso de SQL - Configuração Geral</h1>
 </div>
 
 
@@ -240,6 +276,25 @@ ul.task-list li input[type="checkbox"] {
 <li><p>Instale usando as opções padrão.</p></li>
 <li><p>Abra o Visual Studio Code.</p></li>
 </ol>
+</section>
+<section id="usar-o-git-bash-no-terminal-integrado-do-vs-code" class="level3">
+<h3 class="anchored" data-anchor-id="usar-o-git-bash-no-terminal-integrado-do-vs-code">3.1 Usar o Git Bash no terminal integrado do VS Code</h3>
+<p>Se você instalou o Git no Windows, pode usar o Git Bash dentro do terminal integrado do VS Code e defini-lo como perfil padrão. Assim, sempre que abrir um novo terminal integrado, ele já estará usando o Git Bash.</p>
+<p>Passo a passo:</p>
+<ol type="1">
+<li><p>Abra o VS Code.</p></li>
+<li><p>Abra o terminal integrado: <code>Terminal</code> &gt; <code>New Terminal</code> ou pressione <code>Ctrl+</code> (tecla de acento grave).</p></li>
+<li><p>Clique na seta ao lado do botão <code>+</code> no painel do terminal e escolha <code>Select Default Profile</code> (ou <code>Selecionar Perfil Padrão</code>) e selecione <code>Git Bash</code>.</p>
+<ul>
+<li>Alternativamente, abra a Paleta de Comandos com <code>Ctrl+Shift+P</code>, execute <code>Terminal: Select Default Profile</code> e escolha <code>Git Bash</code>.</li>
+</ul></li>
+<li><p>Crie um novo terminal (clique em <code>+</code>) — ele abrirá com o <code>Git Bash</code>.</p></li>
+</ol>
+<p>Para garantir que o Git Bash seja sempre o perfil padrão (mesmo após reiniciar o VS Code), abra as configurações em JSON (<code>Ctrl+Shift+P</code> -&gt; <code>Preferences: Open Settings (JSON)</code>) e adicione ou confirme a seguinte linha:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode json code-with-copy"><code class="sourceCode json"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">{</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>   <span class="dt">"terminal.integrated.defaultProfile.windows"</span><span class="fu">:</span> <span class="st">"Git Bash"</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Observação: esse ajuste define o perfil padrão para novos terminais integrados. Se quiser que o terminal integrado seja aberto automaticamente ao iniciar o VS Code, instale uma extensão que execute comandos na inicialização ou use uma configuração de tarefas/ extensões (opcional).</p>
 </section>
 </section>
 <section id="instalar-as-extensões-recomendadas-no-vs-code" class="level2">
