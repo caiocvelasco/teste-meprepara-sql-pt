@@ -1,9 +1,8 @@
 project:
   type: website
-  output-dir: docs
 
 website:
-  title: "Configuração do Ambiente"
+  title: "Curso de SQL - Configuração Geral"
   navbar:
     left:
       - href: index.qmd

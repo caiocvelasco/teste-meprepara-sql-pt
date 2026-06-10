@@ -1,7 +1,3 @@
----
-title: "Curso de SQL - Configuração Geral"
----
-
 Este guia mostra o passo a passo para preparar o ambiente básico necessário para testar o curso de SQL.
 
 Neste momento, vamos configurar apenas:

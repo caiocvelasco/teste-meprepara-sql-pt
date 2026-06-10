@@ -1,22 +1,31 @@
-# Quarto
-/.quarto/
+# Quarto generated files
+_site/
+.quarto/
 
-# Preview / cache
-/.cache/
+# Do not ignore docs if you publish via main/docs
+# docs/
 
-# R / RStudio, caso algum dia abra no RStudio
+# R / RStudio
 .Rhistory
 .RData
+.Ruserdata
 .Rproj.user/
 
-# Python, caso algum dia use scripts auxiliares
+# Python
 __pycache__/
 *.py[cod]
 .ipynb_checkpoints/
+.venv/
+venv/
+env/
 
-# Sistema operacional
+# OS files
 .DS_Store
 Thumbs.db
 
-# VS Code local settings
+# Editor files
 .vscode/
+.idea/
+
+# Logs
+*.log
