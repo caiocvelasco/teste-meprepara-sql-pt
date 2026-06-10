@@ -204,13 +204,11 @@ Essa pasta será o lugar onde você guardará projetos baixados do GitHub, inclu
 
 ### Passo a passo
 
-1. Acesse o link do repositório do curso no GitHub.
+1. Acesse o link do repositório do curso no GitHub: https://github.com/caiocvelasco/meprepara-sql
 
-2. Clique no botão **Code**.
+2. Clique no botão verde **Code**.
 
-3. Copie o link HTTPS do repositório.
-
-   O link será parecido com: `https://github.com/usuario/nome-do-repositorio.git`
+3. Copie o link HTTPS do repositório: `https://github.com/caiocvelasco/meprepara-sql.git`
 
 4. No seu computador, crie uma pasta chamada `repositorios`.
 
