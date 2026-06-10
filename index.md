@@ -1,5 +1,5 @@
 ---
-title: "Curso de SQL - Configuração do Ambiente"
+title: "Curso de SQL - Configuração Geral"
 ---
 
 Este guia mostra o passo a passo para preparar o ambiente básico necessário para testar o curso de SQL.
@@ -90,6 +90,32 @@ O Visual Studio Code será o editor usado para abrir a pasta do curso e editar o
 4. Instale usando as opções padrão.
 
 5. Abra o Visual Studio Code.
+
+### 3.1 Usar o Git Bash no terminal integrado do VS Code
+
+Se você instalou o Git no Windows, pode usar o Git Bash dentro do terminal integrado do VS Code e defini-lo como perfil padrão. Assim, sempre que abrir um novo terminal integrado, ele já estará usando o Git Bash.
+
+Passo a passo:
+
+1. Abra o VS Code.
+
+2. Abra o terminal integrado: `Terminal` > `New Terminal` ou pressione `Ctrl+` (tecla de acento grave).
+
+3. Clique na seta ao lado do botão `+` no painel do terminal e escolha `Select Default Profile` (ou `Selecionar Perfil Padrão`) e selecione `Git Bash`.
+
+    - Alternativamente, abra a Paleta de Comandos com `Ctrl+Shift+P`, execute `Terminal: Select Default Profile` e escolha `Git Bash`.
+
+4. Crie um novo terminal (clique em `+`) — ele abrirá com o `Git Bash`.
+
+Para garantir que o Git Bash seja sempre o perfil padrão (mesmo após reiniciar o VS Code), abra as configurações em JSON (`Ctrl+Shift+P` -> `Preferences: Open Settings (JSON)`) e adicione ou confirme a seguinte linha:
+
+```json
+{
+   "terminal.integrated.defaultProfile.windows": "Git Bash"
+}
+```
+
+Observação: esse ajuste define o perfil padrão para novos terminais integrados. Se quiser que o terminal integrado seja aberto automaticamente ao iniciar o VS Code, instale uma extensão que execute comandos na inicialização ou use uma configuração de tarefas/ extensões (opcional).
 
 ## 4. Instalar as extensões recomendadas no VS Code
 
